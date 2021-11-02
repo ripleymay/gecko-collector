@@ -12,3 +12,7 @@ def about(request):
 def geckos_index(request):
   geckos = Gecko.objects.all()
   return render(request, 'geckos/index.html', { 'geckos': geckos })
+
+def geckos_detail(request, gecko_id):
+  gecko = Gecko.objects.get(id=gecko_id)
+  return render(request, 'geckos/detail.html', { 'gecko': gecko })
