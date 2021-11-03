@@ -1,5 +1,10 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
 from .models import Gecko
+
+class GeckoCreate(CreateView):
+  model = Gecko
+  fields = '__all__'
 
 # Create your views here.
 
