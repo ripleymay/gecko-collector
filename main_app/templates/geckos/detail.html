@@ -10,6 +10,10 @@
     <p>Age: {{ gecko.age }}</p>
     <p>Description: {{ gecko.description }}</p>
   </div>
+  <div class="card-action">
+    <a href="{% url 'geckos_update' gecko.id %}">Edit</a>
+    <a href="{% url 'geckos_delete' gecko.id %}">Delete</a>
+  </div>
 </div>
 
 {% endblock %}

@@ -1,10 +1,18 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Gecko
 
 class GeckoCreate(CreateView):
   model = Gecko
   fields = '__all__'
+
+class GeckoUpdate(UpdateView):
+  model = Gecko
+  fields = ['species', 'age', 'description']
+
+class GeckoDelete(DeleteView):
+  model = Gecko
+  success_url = '/geckos/'
 
 # Create your views here.
 
