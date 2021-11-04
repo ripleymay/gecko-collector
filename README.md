@@ -4,6 +4,8 @@ Gecko-collector is a server based app with **basic CRUD functionality**. Users c
 
 This app was built as an intro learning tool to the Django framework and can only be ran on a local server.
 
+![screenshot](https://i.imgur.com/0fKOYdY.png)
+
 ## Next steps
 
 Next steps include creating a more appealing UI and perhaps expanding to all reptile pets rather than just geckos (right now the target user audience is pretty narrow!). The app could also be refactored to implement user-centric CRUD functionality using Django's built in User model which would allow users to create login credentials.
