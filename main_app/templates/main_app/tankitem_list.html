@@ -8,7 +8,9 @@
     <div class="card">
         <div class="card-content">
             <span class="card-title">{{ ti.name }}</span>
-            <p>Heated? {{ ti.heated }}</p>
+            {% if ti.heated %}
+                <p>&#128293;&nbsp;&nbsp;Heat source</p>
+            {% endif %}
         </div>
     </div>
   </a>

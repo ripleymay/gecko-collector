@@ -54,7 +54,7 @@
         <div class="card">
           <div class="card-content">
             <span class="card-title">
-              A {{ ti.heated }} heated {{ ti.name }}
+              {% if ti.heated %} &#128293; {% endif %} {{ ti.name }}
             </span>
           </div>
           <div class="card-action">
@@ -66,7 +66,7 @@
         </div>
       {% endfor %}
     {% else %}
-      <h5>Nothing in the tank :(</h5>
+      <h5>Nothing :(</h5>
     {% endif %}
   </div>
   <div class="col s6">
@@ -76,7 +76,7 @@
         <div class="card">
           <div class="card-content">
             <span class="card-title">
-              A {{ ti.heated }} heated {{ ti.name }}
+              {% if ti.heated %} &#128293; {% endif %} {{ ti.name }}
             </span>
           </div>
           <div class="card-action">
